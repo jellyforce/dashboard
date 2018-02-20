@@ -1,36 +1,126 @@
+
+
+
 <div class="jumbotron text-center">
   <h1>Dashboard</h1>
   <p>Solving problems!</p>
+  <p>For you</p>
 </div>
 
 <div class="container">
   <div class="row">
 
-    <!--main content-->
+    <!--============================================================================
+                          Main Content
+    ================================================================================-->
     <div class="col-xs-9">
       <div class="panel panel-default">
-        <div class="panel-heading text-center">SLA-afspraken</div>
-        <div class="panel-body">Panel Content</div>
+        <div class="panel-heading text-center font-weight-bold">SLA-afspraken</div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            </tbody>
+          </table>
+
+
+
+        </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading text-center">Tickets</div>
-        <div class="panel-body">Panel Content</div>
+        <div class="panel-heading text-center font-weight-bold">Tickets</div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading text-center">PTG</div>
-        <div class="panel-body">Panel Content</div>
+        <div class="panel-heading text-center font-weight-bold">PTG</div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="row">
         <div class="col-xs-6">
           <div class="panel panel-default">
-            <div class="panel-heading text-center">Systemen</div>
+            <div class="panel-heading text-center font-weight-bold">Systemen</div>
             <div class="panel-body">Panel Content</div>
           </div>
 
         </div>
         <div class="col-xs-6">
           <div class="panel panel-default">
-            <div class="panel-heading text-center">Functionaliteiten</div>
+            <div class="panel-heading text-center font-weight-bold">Functionaliteiten</div>
             <div class="panel-body">Panel Content</div>
           </div>
         </div>
@@ -40,58 +130,83 @@
 
 
 
-    <!--right side bar-->
-
+<!--============================================================================
+                      Right side bar
+================================================================================-->
   <div class="col-xs-3">
+
     <div class="panel panel-default">
-      <div class="panel-heading text-center">Klanttevredenheid</div>
-      <div class="panel-body">Panel Content</div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading text-center">Contactpersoon</div>
-      <div class="panel-body">Panel Content</div>
+      <div class="panel-heading text-center font-weight-bold">Klanttevredenheid</div>
+      <div class="panel-body align-content-center">
+
+
+        <!--progressbar-component-->
+        <app-progress-bar></app-progress-bar>
     </div>
 
 
+
+  </div>
     <div class="panel panel-default">
-      <div class="panel-heading text-center">Links</div>
+      <div class="panel-heading text-center font-weight-bold">Contactgegevens</div>
       <div class="panel-body">
-        <div class="row text-center">
-          <div class="col">
-          <a href="">link</a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col">
-            <a href="">link</a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col">
-            <a href="">link</a>
-          </div>
-         </div>
-        <div class="row text-center">
-          <div class="col">
-            <a href="">link</a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col">
-            <a href="">link</a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col">
-            <a href="">link</a>
-          </div>
-        </div>
-
-      <div class="row text-center">
         <div class="col">
-          <button type="button" class="btn-warning">Inloggen bij klant</button>
+          <label>Bedrijf</label>
+          <p>{{bedrijfsnaam}}</p>
+          <label>Contactpersoon</label>
+          <p>{{contactpersoon}}</p>
+          <label>E-mail</label>
+          <p>{{mail}}</p>
+          <label>Tel. nr.</label>
+          <p>{{telefoon}}</p>
         </div>
       </div>
     </div>
-  </div>
 
+
+    <div class="panel panel-default">
+      <div class="panel-heading text-center font-weight-bold">Links</div>
+      <div class="panel-body">
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="">link</a>
+          </div>
+        </div>
+
+
+
+        <div class="row text-center" style="margin-top: 25px;">
+          <div class="col">
+            <button type="button" class="btn">Inloggen bij klant</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
